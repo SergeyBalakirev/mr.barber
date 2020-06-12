@@ -23,10 +23,17 @@ li {
   list-style: none;
 }
 
+p,
+h1,
+h2 {
+  margin: 0;
+}
+
 body {
   font-family: 'Poppins', sans-serif;
   font-weight: 400;
   font-size: 24px;
+  line-height: 36px;
   color: #515151;
 }
 
@@ -34,4 +41,11 @@ body {
   max-width: 1140px;
   margin: 0 auto;
   padding: 0 15px;
+}
+
+.section__title {
+  font-size: 40px;
+  color: #111;
+  font-family: 'Noto Serif', serif;
+  font-weight: 700;
 }
