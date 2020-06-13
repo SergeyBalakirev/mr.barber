@@ -4,17 +4,16 @@
 
 // start header 
 .header {
-  background-image: url(../images/header-bg.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  height: 100vh;
-  padding: 40px 0 140px;
-  &__inner {
-    text-align: center;
-  }
   &__nav {
-    margin-bottom: 95px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    z-index: 1000;
+    padding: 40px 0 30px;
+    background-color: #000;
+    opacity: .7;
   }
   &__menu {
     display: flex;
@@ -36,6 +35,21 @@
     &:focus {
       color: #c79e56;
     }
+  }
+  
+}
+
+// end header 
+
+// start home 
+.home {
+  background-image: url(../images/header-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 140px 0;
+  &__inner {
+    text-align: center;
   }
   &__logo {
     margin-bottom: 35px;
@@ -77,15 +91,14 @@
     color: #c79e56;
   }
 }
+// end home 
 
-// end header 
 
 // start about 
 
 .about {
-  height: 100vh;
-  padding: 150px 0 120px;
   &__inner {
+    padding: 190px 0 120px;
     display: flex;
   }
   &__title {
@@ -98,7 +111,7 @@
     
   }
   &__btn {
-    border: none;
+    text-decoration: none;
     color: #c79e56;
     font-family: 'Myriad Pro';
     font-size: 16px;
@@ -132,15 +145,16 @@
   }
 }
 
-
+#modal {
+  display: none;
+}
 // end about 
 
 // start services 
 .services {
   background-color: #f7f7f7;
-  height: 100vh;
-  padding: 95px 0 100px;
   &__inner {
+    padding: 130px 0 100px;
     text-align: center;
   }
   &__title {
@@ -187,9 +201,8 @@
 
 // start barbers 
 .barbers {
-  height: 100vh;
-  padding: 150px 0 180px;
   &__inner {
+    padding: 120px 0 0px;
     text-align: center;
   }
   &__title {
@@ -224,15 +237,23 @@
     width: 255px;
     height: 320px;
   }
-  &__social {
+  &__info {
     position: absolute;
     bottom: 0;
     left: 0;
     width: 100%;
     height: 100px;
+    padding-top: 20px;
     background-color: rgb(199, 158, 86);
     opacity: 0.78;
     z-index: 8;
+    font-size: 22px;
+    font-family: 'Noto Serif', serif;
+    font-weight: 400;
+    color: #fff;
+    text-transform: uppercase;
+  }
+  &__social {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -241,6 +262,7 @@
     text-decoration: none;
     color: #ccc;
     transition: all .5s;
+    font-size: 20px;
     &:hover {
       color: #fff;
     }
@@ -253,3 +275,13 @@
 
 
 // end barbers 
+
+// start look-book 
+.look-book {
+  &__img {
+    display: block;
+  }
+}
+
+
+// end look-book 

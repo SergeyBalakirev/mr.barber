@@ -16,76 +16,82 @@
 <body>
 
   <header class="header">
-    <div class="container">
-      <div class="header__inner">
 
-        <nav class="header__nav">
-          <ul class="header__menu">
-            <li class="header__item">
-              <a class="header__menu-link" href="#">
-                Главная
-              </a>
-            </li>
-            <li class="header__item">
-              <a class="header__menu-link" href="#">
-                О нас
-              </a>
-            </li>
-            <li class="header__item">
-              <a class="header__menu-link" href="#">
-                Услуги
-              </a>
-            </li>
-            <li class="header__item">
-              <a class="header__menu-link" href="#">
-                Барберы
-              </a>
-            </li>
-            <li class="header__item">
-              <a class="header__menu-link" href="#">
-                Лукбук
-              </a>
-            </li>
-            <li class="header__item">
-              <a class="header__menu-link" href="#">
-                Отзывы
-              </a>
-            </li>
-            <li class="header__item">
-              <a class="header__menu-link" href="#">
-                Новости
-              </a>
-            </li>
-            <li class="header__item">
-              <a class="header__menu-link" href="#">
-                Контакты
-              </a>
-            </li>
-          </ul>
-        </nav>
+    <nav class="header__nav">
+      <ul class="header__menu">
+        <li class="header__item">
+          <a class="header__menu-link" href="#">
+            Главная
+          </a>
+        </li>
+        <li class="header__item">
+          <a class="header__menu-link" href="#about">
+            О нас
+          </a>
+        </li>
+        <li class="header__item">
+          <a class="header__menu-link" href="#services">
+            Услуги
+          </a>
+        </li>
+        <li class="header__item">
+          <a class="header__menu-link" href="#barbers">
+            Барберы
+          </a>
+        </li>
+        <li class="header__item">
+          <a class="header__menu-link" href="#look-book">
+            Лукбук
+          </a>
+        </li>
+        <li class="header__item">
+          <a class="header__menu-link" href="#">
+            Отзывы
+          </a>
+        </li>
+        <li class="header__item">
+          <a class="header__menu-link" href="#">
+            Новости
+          </a>
+        </li>
+        <li class="header__item">
+          <a class="header__menu-link" href="#">
+            Контакты
+          </a>
+        </li>
+      </ul>
 
+    </nav>
 
-        <a class="header__logo" href="#">
-          <img src="images/logo.png" alt="логотип">
-        </a>
-        <h1 class="header__title">
-          Мы знаем ваш стиль лучше
-        </h1>
-        <p class="header__text">
-          Территория барбершопа "Mr.Barber" создана исключительно для мужчин, которые
-          ценят высокое качество, время и безупречный стиль.
-        </p>
-        <button class="button">
-          Записаться
-        </button>
-      </div>
-    </div>
   </header>
 
   <main>
+    <section class="home">
+      <div class="container">
+        <div class="home__inner">
+
+          <a class="home__logo" href="#">
+            <img src="images/logo.png" alt="логотип">
+          </a>
+          <h1 class="home__title">
+            Мы знаем ваш стиль лучше
+          </h1>
+          <p class="home__text">
+            Территория барбершопа "Mr.Barber" создана исключительно для мужчин, которые
+            ценят высокое качество, время и безупречный стиль.
+          </p>
+          <button class="button">
+            Записаться
+          </button>
+        </div>
+      </div>
+    </section>
+
+
 
 
     <section class="about">
+      <a name="about"></a>
       <div class="container">
         <div class="about__inner">
 
@@ -98,9 +104,14 @@
               стильной прически до коррекции бороды и груминга бровей. Позаботься о своей прическе, наслаждаясь
               свежеприготовленным кофе и хорошей музыкой.
             </p>
-            <button class="about__btn">
+            <a class="about__btn" data-fancybox data-src="#modal" href="javascript:;">
               Подробнее
-            </button>
+            </a>
+
+            <div id="modal">
+              12345
+            </div>
+
           </div>
 
           <img class="about__img1" src="images/content/about-img1.jpg" alt="картинка">
@@ -114,6 +125,7 @@
     </section>
 
     <section class="services">
+      <a name="services"></a>
       <div class="container">
         <div class="services__inner">
           <h2 class="services__title section__title">
@@ -181,6 +193,7 @@
 
 
     <section class="barbers">
+      <a name="barbers"></a>
       <div class="container">
         <div class="barbers__inner">
           <h2 class="section__title barbers__title">
@@ -189,38 +202,50 @@
           <div class="barbers__box">
             <div class="barbers__item">
               <img class="barbers__img" src="images/content/barbers-img1.jpg" alt="фото">
-              <div class="barbers__social">
-                <a class="barbers__social-ico icon-twitter" href="#"></a>
-                <a class="barbers__social-ico icon-facebook" href="#"></a>
-                <a class="barbers__social-ico icon-pinterest" href="#"></a>
-                <a class="barbers__social-ico icon-linkedin" href="#"></a>
+              <div class="barbers__info">
+                Александр
+                <div class="barbers__social">
+                  <a class="barbers__social-ico icon-twitter" href="#"></a>
+                  <a class="barbers__social-ico icon-facebook" href="#"></a>
+                  <a class="barbers__social-ico icon-pinterest" href="#"></a>
+                  <a class="barbers__social-ico icon-linkedin" href="#"></a>
+                </div>
               </div>
             </div>
             <div class="barbers__item">
               <img class="barbers__img" src="images/content/barbers-img2.jpg" alt="фото">
-              <div class="barbers__social">
-                <a class="barbers__social-ico icon-twitter" href="#"></a>
-                <a class="barbers__social-ico icon-facebook" href="#"></a>
-                <a class="barbers__social-ico icon-pinterest" href="#"></a>
-                <a class="barbers__social-ico icon-linkedin" href="#"></a>
+              <div class="barbers__info">
+                Михаил
+                <div class="barbers__social">
+                  <a class="barbers__social-ico icon-twitter" href="#"></a>
+                  <a class="barbers__social-ico icon-facebook" href="#"></a>
+                  <a class="barbers__social-ico icon-pinterest" href="#"></a>
+                  <a class="barbers__social-ico icon-linkedin" href="#"></a>
+                </div>
               </div>
             </div>
             <div class="barbers__item">
               <img class="barbers__img" src="images/content/barbers-img3.jpg" alt="фото">
-              <div class="barbers__social">
-                <a class="barbers__social-ico icon-twitter" href="#"></a>
-                <a class="barbers__social-ico icon-facebook" href="#"></a>
-                <a class="barbers__social-ico icon-pinterest" href="#"></a>
-                <a class="barbers__social-ico icon-linkedin" href="#"></a>
+              <div class="barbers__info">
+                Даниэль
+                <div class="barbers__social">
+                  <a class="barbers__social-ico icon-twitter" href="#"></a>
+                  <a class="barbers__social-ico icon-facebook" href="#"></a>
+                  <a class="barbers__social-ico icon-pinterest" href="#"></a>
+                  <a class="barbers__social-ico icon-linkedin" href="#"></a>
+                </div>
               </div>
             </div>
             <div class="barbers__item">
               <img class="barbers__img" src="images/content/barbers-img4.jpg" alt="фото">
-              <div class="barbers__social">
-                <a class="barbers__social-ico icon-twitter" href="#"></a>
-                <a class="barbers__social-ico icon-facebook" href="#"></a>
-                <a class="barbers__social-ico icon-pinterest" href="#"></a>
-                <a class="barbers__social-ico icon-linkedin" href="#"></a>
+              <div class="barbers__info">
+                Николай
+                <div class="barbers__social">
+                  <a class="barbers__social-ico icon-twitter" href="#"></a>
+                  <a class="barbers__social-ico icon-facebook" href="#"></a>
+                  <a class="barbers__social-ico icon-pinterest" href="#"></a>
+                  <a class="barbers__social-ico icon-linkedin" href="#"></a>
+                </div>
               </div>
             </div>
           </div>
@@ -228,7 +253,17 @@
       </div>
     </section>
 
-
+    <section class="look-book">
+      <a name="look-book"></a>
+      <div class="look-book__slider">
+        <div class="look-book__inner">
+          <img class="look-book__img" src="images/lookbook-img1.jpg" alt="слайдер изображение">
+          <img class="look-book__img" src="images/lookbook-img2.jpg" alt="слайдер изображение">
+          <img class="look-book__img" src="images/lookbook-img3.jpg" alt="слайдер изображение">
+          <img class="look-book__img" src="images/lookbook-img4.jpg" alt="слайдер изображение">
+        </div>
+      </div>
+    </section>
 
 
 
@@ -259,7 +294,7 @@
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="js/libs.min.js"></script>
-  <script src="js/main.min.js"></script>
+  <script src="js/main.js"></script>
 </body>
 
 </html>
