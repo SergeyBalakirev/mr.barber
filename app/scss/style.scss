@@ -47,9 +47,10 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  padding: 140px 0;
+  
   &__inner {
     text-align: center;
+    padding: 140px 0;
   }
   &__logo {
     margin-bottom: 35px;
@@ -271,7 +272,7 @@
 // start barbers 
 .barbers {
   &__inner {
-    padding: 120px 0 0px;
+    padding: 120px 0 100px;
     text-align: center;
   }
   &__title {
@@ -347,10 +348,262 @@
 
 // start look-book 
 .look-book {
+  padding-top: 120px;
   &__img {
     display: block;
   }
 }
 
-
 // end look-book 
+
+// start testimonials 
+
+.testimonials {
+  &__inner {
+    text-align: center;
+    padding: 140px 0 80px;
+  }
+  &__title {
+    margin-bottom: 70px;
+  }
+  &__item {
+    border-radius: 10px;
+    box-shadow: 3.878px 6.997px 49.68px 4.32px rgba(241, 241, 241, 0.91);
+    max-width: 750px;
+    width: 100%;
+    height: 350px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    margin-top: 20px;
+    padding: 60px;
+    position: relative;
+    &::after {
+      content: '';
+      position: absolute;
+      max-width: 708px;
+      width: 100%;
+      height: 23px;
+      background-color: rgb(207, 178, 128);
+      box-shadow: 3.661px 41.84px 49.68px 4.32px rgba(241, 241, 241, 0.91);
+      left: 50%;
+      transform: translateX(-50%);
+      bottom: -23px;
+      border-radius: 0 0 10px 10px;
+    }
+  }
+  &__text {
+    margin-bottom: 30px;
+  }
+
+  &__name {
+    color: #111;
+    font-family: 'Myriad Pro';
+    font-size: 22px;
+    line-height: 30px;
+    text-transform: uppercase;
+  }
+  &__slider-inner {
+    position: relative;
+  }
+  .slick-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 1px solid #9c9c9c;
+    color: #9c9c9c;
+    background-color: #fff;
+    outline: none;
+    z-index: 9;
+    &:focus {
+      border: 1px solid #c79e56;
+      color: #c79e56;
+    }
+    &:hover {
+      border: 1px solid #c79e56;
+      color: #c79e56;
+    }
+  }
+  .slick-prev {
+    left: 0;
+    
+  }
+  .slick-next {
+    right: 0;
+    left: auto;
+  }
+}
+
+// end testimonials 
+
+
+// start news 
+
+.news {
+  &__inner {
+    text-align: center;
+    padding: 140px 0 160px;
+  }
+  &__title {
+    margin-bottom: 60px;
+  }
+  &__item {
+    box-shadow: 0.14px 1.995px 5.52px 0.48px rgba(241, 241, 241, 0.91);
+    max-width: 350px;
+    width: 100%;
+    text-align: left;
+    transition: all .3s;
+    margin: 20px 0;
+    &:hover {
+      box-shadow: 3.661px 41.84px 49.68px 4.32px rgba(241, 241, 241, 0.91);
+    }
+    &:hover .news__ttl,
+    &:hover .news__btn {
+      color: #c79e56;
+    }
+  }
+  &__img {
+    max-width: 350px;
+    height: 186px;
+  }
+  &__descr {
+    padding: 50px 30px 30px;
+  }
+  &__ttl {
+    font-family: 'Noto Serif', serif;
+    font-weight: 400;
+    color: #111;
+    font-size: 24px;
+    line-height: 30px;
+    text-transform: uppercase;
+    height: 120px;
+    overflow: hidden;
+    transition: all .3s;
+    margin-bottom: 10px;
+  }
+  &__txt {
+    font-size: 16px;
+    line-height: 26px;
+    height: 78px;
+    overflow: hidden;
+    margin-bottom: 30px;
+  }
+  &__btn {
+    color: #515151;
+    transition: all .3s;
+  }
+}
+
+
+
+
+// end news 
+
+// start footer 
+
+.footer {
+  background-color: #333333;
+  padding: 90px 0 50px;
+  &__copy {
+    font-size: 18px;
+    line-height: 30px;
+    color: #fff;
+    text-align: center;
+  }
+  &__info {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 100px;
+  }
+  &__contacts {
+    max-width: 190px;
+  }
+  &__logo {
+    margin-bottom: 20px;
+  }
+  &__adress {
+    display: block;
+    font-size: 18px;
+    line-height: 30px;
+    color: #fff;
+    text-decoration: none;
+    margin-bottom: 20px;
+  }
+  &__phone {
+    display: block;
+    font-size: 20px;
+    line-height: 30px;
+    color: #fff;
+    text-decoration: none;
+    margin-bottom: 30px;
+  }
+  &__social-ico {
+    text-decoration: none;
+    color: #cbcbcb;
+    font-size: 20px;
+    transition: all .3s;
+    & + .footer__social-ico {
+      margin-left: 20px;
+    }
+    &:hover {
+      color: #c79e56;
+    }
+  }
+
+  &__menu {
+    max-width: 130px;
+  }
+  &__title {
+    color: #c79e56;
+    font-family: 'Myriad Pro';
+    font-size: 22px;
+    line-height: 30px;
+    margin-bottom: 50px;
+  }
+  &__link {
+    text-decoration: none;
+    color: #fff;
+    font-family: 'Myriad Pro';
+    font-size: 18px;
+    line-height: 38px;
+    width: 100%;
+  }
+  &__form {
+    position: relative;
+  }
+  &__mail {
+    outline: none;
+    padding: 15px 135px 20px 15px;
+    border: none;
+    height: 50px;
+    max-width: 350px;
+    width: 100%;
+    
+    &::placeholder {
+      color: #9a9a9a;
+      font-family: 'Myriad Pro';
+      font-size: 14px;
+    }
+  }
+  &__btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 2;
+    border: none;
+    max-width: 120px;
+    width: 100%;
+    height: 50px;
+    color: #fff;
+    text-transform: uppercase;
+    background-color: #c79e56;
+    font-family: 'Myriad Pro';
+    font-size: 15px;
+    cursor: pointer;
+    outline: none;
+  }
+}
+
+// end footer 
