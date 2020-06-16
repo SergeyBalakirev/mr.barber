@@ -21,5 +21,8 @@ $(function () {
     slidesToScroll: 3,
   });
 
+  $('.header__btn').on('click', function () {
+    $('.header__menu').slideToggle();
+  });
 
 });

@@ -145,16 +145,34 @@
     height: 215px;
   }
   &__popup {
-    max-width: 800px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0px 0px 35px 0px rgba(0, 0, 0, 0.22);
+    max-width: 935px;
+    padding: 60px;
+    font-size: 20px;
+    line-height: 29px;
+    color: #111;
   }
+  &__logo {
+    display: block;
+    margin: 0 auto 40px;
+  }
+  &__contacts {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+  }
+
+
   &__mail,
   &__phone {
     text-decoration: none;
     color: #c79e56;
     display: block;
     padding-left: 30px;
-    margin-bottom: 10px;
     position: relative;
+    margin: 0 10px;
   }
   &__mail {
     &::before {
@@ -272,7 +290,7 @@
 // start barbers 
 .barbers {
   &__inner {
-    padding: 120px 0 100px;
+    padding: 140px 0 100px;
     text-align: center;
   }
   &__title {
@@ -348,7 +366,9 @@
 
 // start look-book 
 .look-book {
-  padding-top: 120px;
+  &__slider {
+    padding: 140px 0 0;
+  }
   &__img {
     display: block;
   }
@@ -375,7 +395,7 @@
     margin: 0 auto;
     margin-bottom: 30px;
     margin-top: 20px;
-    padding: 60px;
+    padding: 30px 60px;
     position: relative;
     &::after {
       content: '';
@@ -391,8 +411,15 @@
       border-radius: 0 0 10px 10px;
     }
   }
+  &__img {
+    display: block;
+    margin: 0 auto 30px;
+  }
   &__text {
     margin-bottom: 30px;
+    font-family: 'Myriad Pro';
+    font-size: 20px;
+    line-height: 34px;
   }
 
   &__name {
@@ -569,6 +596,10 @@
     font-size: 18px;
     line-height: 38px;
     width: 100%;
+    transition: all .3s;
+    &:hover {
+      color: #c79e56;
+    }
   }
   &__form {
     position: relative;
@@ -603,7 +634,15 @@
     font-size: 15px;
     cursor: pointer;
     outline: none;
+    transition: all .3s;
+    &:hover {
+      background-color: transparent;
+      color: #c79e56;
+    }
   }
 }
 
 // end footer 
+
+
+@import 'media';
