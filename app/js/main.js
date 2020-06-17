@@ -12,6 +12,7 @@ $(function () {
   $('.testimonials__slider-inner').slick({
     prevArrow: '<button class="slick-arrow slick-prev icon-lnr-arrow-left"></button>',
     nextArrow: '<button class="slick-arrow slick-next icon-lnr-arrow-right"></button>',
+
   });
 
   $('.news__slider-inner').slick({
@@ -19,6 +20,24 @@ $(function () {
     arrows: false,
     slidesToShow: 3,
     slidesToScroll: 3,
+
+
+    responsive: [
+      {
+        breakpoint: 1200,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+        }
+      },
+      {
+        breakpoint: 800,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        }
+      },
+    ]
   });
 
   $('.header__btn').on('click', function () {
