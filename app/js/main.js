@@ -6,7 +6,7 @@ $(function () {
     fade: true,
     arrows: false,
     autoplay: true,
-    autoplaySpeed: 5000,
+    autoplaySpeed: 1000,
   });
 
   $('.testimonials__slider-inner').slick({
@@ -40,8 +40,16 @@ $(function () {
     ]
   });
 
-  $('.header__btn').on('click', function () {
+  $('.burger').on('click', function () {
+    $('.burger').toggleClass('burger__active');
+
     $('.header__menu').slideToggle();
+  });
+
+  $('.header__menu-link').on('click', function () {
+    $('.header__menu').slideToggle();
+
+    $('.burger').toggleClass('burger__active');
   });
 
 });
